@@ -1,0 +1,208 @@
+/* Configurações Body */
+
+body{
+    background-color: #343231;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: white;
+    height: 100vh;
+}
+
+/*Seção da NavBar*/
+
+ul.nav{
+    position: fixed;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 3%;
+    border-bottom: solid 1px white;
+    width: 94%;
+}
+
+li button{
+    color: white;
+    border: none;
+    background-color: #343231;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: large;
+    transition-duration: 0.2s;
+}
+
+li button:hover{
+    background-color: #252423;
+}
+
+div.nav{
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    align-items: top;
+    background-color: #343231;
+}
+
+/* Seção Sobre */
+
+section#sobre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-top: 6%;
+    flex-flow: column;
+    gap: 5%;
+}
+
+p.p1{
+    margin-top: 5%;
+    width: 30%;
+    font-size: large;
+    height: fit-content;
+    text-align: center;
+}
+
+img.selfie{
+    width: 12vw;
+    border: solid 1px white;
+    border-radius: 30px;
+    margin-top: 4%;
+}
+
+/*Seção Projetos*/
+
+section#projetos{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-right: 0.7%;
+    margin-top: 5%;
+}
+
+div.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+div.proj{
+    border: solid 1px white;
+    border-radius: 20px;
+    background-color: #343231;
+    width: 5%;
+    height: 12vh;
+    color: white;
+    padding: 2% 2%;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+div.proj:hover{
+    box-shadow: 0 4px 4px 0 #252423;
+}
+
+button.proj{
+    background-color: #343231;
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+button.proj:hover{
+    background-color: #161515;
+    padding: 8px 12px;
+}
+
+/* Mini Seção Pop-up Lateral */
+
+div.popup{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 25%;
+    height: 100vh;
+    background-color: #343231;
+    color: white;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+p.popdesc{
+    margin-left: 24%;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+}
+
+img.popimg{
+    width: 100%;
+}
+
+div.popup.aberto{
+    right: 0;
+}
+
+div.popcont{
+    padding: 20px;
+}
+
+button.voltar{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button.voltar:hover{
+    text-decoration: underline;
+}
+/* Seção Contato */
+
+section#contato{
+    margin-top: 5%;
+    display: flex;
+    justify-content: bottom;
+    flex-flow: column;
+    align-items: center;
+}
+
+div.socials{
+    margin-top: 3%;
+    margin-bottom: 0;
+}
+
+a.cont{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+a.cont:hover{
+    color: lightgray;
+    text-decoration: underline;
+}
+
+footer{
+    margin-top: 1.5%;
+    color: lightgrey;
+}

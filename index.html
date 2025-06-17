@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Cirino | Front-End Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav">
+            <div class="nav">
+                <li><button onclick="scrollSec('sobre')">Sobre</button></li>
+                <li><button onclick="scrollSec('projetos')">Projetos</button></li>
+                <li><button onclick="scrollSec('contato')">Contato</button></li>
+            </div>
+        </ul>
+    </nav>
+    <section id="sobre">
+        <h2 class="s1">Sobre Mim</h2>
+        <p class="p1">Rafael Cirino</p>
+        <img class="selfie" src="imgs/selfie.jpg">
+        <p class="p1">Eu sou um Dev Front-End ainda inexperiente, mas planejo conseguir experiencia e demonstrar minhas competencias</p>
+    </section>
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos">
+            <div class="proj">
+                <p>Portfolio Simples</p>
+                <button class="proj" onclick="abrirpop1()">Ver Sobre</button>
+            </div>
+            <div id="popup1" class="popup">
+                <div class="popupcont">
+                    <button class="voltar" onclick="fecharpop1()">Voltar</button>
+                    <p class="popdesc">Este site foi feito com o básico HTML, CSS e JavaScript. Ele foi feito para documentar minha evolução e meus futuros projetos
+                        (Não é um site responsivo)
+                    </p>
+                    <img class="popimg" src="imgs/site1.png">
+                </div>
+            </div>
+            <div class="proj">
+                <p>Bloco de Testes</p>
+                <button class="proj" onclick="abrirpop2()">Ver Sobre</button>
+            </div>
+            <div id="popup2" class="popup">
+                <div class="popupcont">
+                    <button class="voltar" onclick="fecharpop2()">Voltar</button>
+                    <a class="link" href="https://github.com/RafaelRelQ"></a>
+                </div>
+            </div>
+            <div class="proj">
+                <p>Bloco de Testes</p>
+                <button class="proj" onclick="abrirpo3()">Ver Sobre</button>
+            </div>
+            <div id="popup3" class="popup">
+                <div class="popupcont">
+                    <button class="voltar" onclick="fecharpop3()">Voltar</button>
+                </div>
+            </div>
+            <div class="proj">
+                <p>Bloco de Testes</p>
+                <button class="proj" onclick="abrirpop4()">Ver Sobre</button>
+            </div>
+            <div id="popup4" class="popup">
+                <div class="popupcont">
+                    <button class="voltar" onclick="fecharpop4()">Voltar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <h2 class="hc">Contatos</h2>
+        <div class="socials">
+            <a class="cont" href="https://github.com/RafaelRelQ" target="_blank">Github</a>
+            <a class="cont" href="https://www.linkedin.com/in/rafaelcirinodecarvalho" target="_blank">LinkedIn</a>
+        </div>
+        <footer>Site feito com HTML, CSS, JS apenas</footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
