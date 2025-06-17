@@ -50,7 +50,7 @@ div.nav{
 
 section#sobre{
     display: flex;
-    width: 100%;
+    width: 98vw;
     justify-content: center;
     align-items: center;
     align-self: center;
@@ -107,9 +107,6 @@ div.proj{
     padding: 2% 2%;
     text-align: center;
     transition-duration: 0.2s;
-}
-
-div.proj:hover{
     box-shadow: 0 4px 4px 0 #252423;
 }
 
@@ -125,7 +122,7 @@ button.proj{
 
 button.proj:hover{
     background-color: #161515;
-    padding: 8px 12px;
+    padding: 8px 10px;
 }
 
 /* Mini Seção Pop-up Lateral */
@@ -141,8 +138,6 @@ div.popup{
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
     transition: right 0.4s ease-in-out;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
 }
 
 p.popdesc{
@@ -154,6 +149,21 @@ p.popdesc{
 
 img.popimg{
     width: 100%;
+}
+
+a.link{
+    background-color: #343231;
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 6px;
+    margin-left: 43%;
+}
+
+a.link:hover{
+    background-color: #161515;
 }
 
 div.popup.aberto{
@@ -186,6 +196,14 @@ section#contato{
     align-items: center;
 }
 
+p.nt{
+    width: 13%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    align-self: center;
+}
+
 div.socials{
     margin-top: 3%;
     margin-bottom: 0;
@@ -203,6 +221,8 @@ a.cont:hover{
 }
 
 footer{
+    font-size: large;
     margin-top: 1.5%;
     color: lightgrey;
+    text-align: center;
 }
